@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Multi-Cloud Kubernetes | Jose Ramos</title>
+    <meta name="description" content="Details on the Multi-Cloud Kubernetes Federation project by Jose Ramos.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-branding">Jose Ramos</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="project1.html" class="nav-link">Project 1</a></li>
+                    <li class="nav-item"><a href="project2.html" class="nav-link">Project 2</a></li>
+                    <li class="nav-item"><a href="project3.html" class="nav-link">Project 3</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-hero">
+            <img src="https://images.unsplash.com/photo-1603969403487-97d0483256b3?q=80&w=2070&auto=format&fit=crop" alt="Network of interconnected cloud icons" class="project-header-image">
+            <div class="project-hero-overlay">
+                <h1>Multi-Cloud Kubernetes Federation</h1>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container project-details">
+                <h2>Project Overview</h2>
+                <p>To avoid vendor lock-in and enhance disaster recovery capabilities, the organization decided to pursue a multi-cloud strategy. I was tasked with leading the technical design and implementation of a federated Kubernetes platform spanning both AWS (EKS) and Google Cloud (GKE).</p>
+                
+                <h3>Key Responsibilities:</h3>
+                <ul>
+                    <li>Evaluated and selected Google Anthos as the central control plane for managing clusters across different cloud providers.</li>
+                    <li>Architected a global service mesh using Istio to manage cross-cluster traffic, enforce security policies, and provide unified telemetry.</li>
+                    <li>Utilized Terraform to provision and manage the underlying infrastructure for the Kubernetes clusters in both clouds, ensuring consistency.</li>
+                    <li>Developed a GitOps-based deployment strategy using ArgoCD to synchronize application and configuration state across all federated clusters.</li>
+                </ul>
+
+                <h3>Results & Achievements:</h3>
+                <p>The successful implementation of the federated platform provided a single pane of glass for managing our entire container ecosystem. We achieved active-active disaster recovery, allowing for seamless failover between cloud providers with no data loss. This strategic initiative also gave the business leverage to negotiate better pricing with cloud vendors.</p>
+
+                <p><a href="index.html#projects" class="back-link">&larr; Back to all projects</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Jose Ramos. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
