@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose Ramos | Principal DevOps Engineer</title>
+    <title>Jose Ramos - DevOps Student | Principal DevOps Engineer</title>
     <meta name="description" content="The professional portfolio for Jose Ramos, a Principal DevOps Engineer specializing in cloud-native technologies, SRE, and DevSecOps.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -97,5 +97,22 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+
+  document.querySelectorAll('.nav-link').forEach(link =>
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    })
+  );
+</script>
+
 </body>
 </html>
