@@ -1,3 +1,7 @@
+Jose Ramos
+Demonstration of deploying website to github pages.
+
+
 # AI Website
 
 ## Purpose
